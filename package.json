@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-project-starter",
+  "version": "1.0.0",
+  "description": "Starter nodejs project",
+  "main": "index.html",
+  "scripts": {
+    "dev": "rm -rf ./development && rm -rf ./.cache && parcel src/index.html --out-dir development -p 3000",
+    "build": "parcel build src/index.html --experimental-scope-hoisting --out-dir dist --public-url ./"
+  },
+  "keywords": [],
+  "author": "Agence Groom",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "node-sass": "^4.14.1",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.1.2"
+  }
+}
